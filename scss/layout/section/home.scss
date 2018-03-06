@@ -1,0 +1,38 @@
+.home__content{
+    position: absolute;
+    top: 135px;
+    left: 100px;
+}
+.home__content-wrap{
+    position: relative;
+}
+.home__title{
+    font-weight: 900;
+    font-size: 82px;
+    color: #fff;
+    width: 80%;
+    line-height: .95;
+}
+.home__link{
+    display: block;
+    margin-top: 55px;
+    padding-bottom: 98px;
+}
+.home__link-ins{
+    font-weight: 700;
+    font-size: 14px;
+    color: #fff;
+}
+.home__link-arrow{
+    font-weight: 900;
+    font-size: 20px;
+    color: #fff;
+}
+.home__picture{
+    position: absolute;
+    right: 75px;
+    bottom: 0;
+}
+.home-navigate{
+    //position: relative;
+}

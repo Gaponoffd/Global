@@ -1,0 +1,22 @@
+
+body, html{
+    height: 100%;
+    width: 100%;
+}
+body{
+    font-family: 'Montserrat', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-display: optional;
+    //line-height: 1.42rem;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    cursor: pointer; 
+}
+*{
+    box-sizing: border-box;
+}

@@ -1,0 +1,45 @@
+.header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.logo{
+    width: 30px;
+    height: 28px;
+    vertical-align: middle;
+}
+.logo__link-text{
+    vertical-align: middle;
+    font-weight: 700;
+    font-size: 16px;
+    color: #fff;
+    margin-left: 10px;
+}
+.header__link{
+    display: block;
+    padding: 10px 15px;
+    background-color: #0f33ff;
+    font-weight: 700;
+    font-size: 14px;
+    color: #fff;
+}
+.menu__link{
+    display: block;
+    text-align: center;
+}
+.menu__link-block{
+    width: 19px;
+    height: 2px;
+    background-color: #fff;
+    margin-bottom: 4px;
+}
+.menu__link-block_width{
+    width: 13px;
+    margin-left: 3px
+}

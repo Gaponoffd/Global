@@ -4,7 +4,7 @@
     left: 100px;
 }
 .home__content-wrap{
-    position: relative;
+    position: relative;    
 }
 .home__title{
     font-weight: 900;
@@ -16,7 +16,7 @@
 .home__link{
     display: block;
     margin-top: 55px;
-    padding-bottom: 98px;
+    padding-bottom: 90px;
 }
 .home__link-ins{
     font-weight: 700;
@@ -31,8 +31,26 @@
 .home__picture{
     position: absolute;
     right: 75px;
-    bottom: 0;
+    bottom: -5px;
+}
+.home__line{
+    width: 92%;
+    height: 2px;
+    background-color: rgba(255, 255, 255, 0.051); 
 }
 .home-navigate{
-    //position: relative;
+    margin-top: 10px;
+}
+.home-navigate__list{
+    display: flex;
+}
+.home-navigate__item{
+    width: 268px;
+    color: rgba(255, 255, 255, 0.1);
+    font-size: 16px;
+    line-height: 1.5;
+    margin-right: 60px;
+    b{
+        font-size: 18px;
+    }
 }

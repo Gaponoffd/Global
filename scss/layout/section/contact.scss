@@ -16,13 +16,40 @@
     background-color: #0b0b0b;
     box-shadow: 0px 0px 29px 0px rgba(0, 0, 0, 0.75);
 }
-.contact__text{
+.contact__block-content{
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
+}
+.contact__text{  
     font-size: 14px;
     font-weight: 700;
     color: #fff;
+}
+.contact__text-data{
+    margin-bottom: 25px;
+    white-space: nowrap;
+}
+.contact__btns-link{
+    display: inline-block;
+    padding: 15px 30px;
+    font-size: 14px;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 25px;
+
+    &:last-child{
+        margin-bottom: 0;
+    }
+    &_one{
+        background-color: #1769ff;
+    }
+    &_two{
+        background-color: #ea4c89;
+    }
+    &_three{
+        background-color: #0f33ff;
+    }
 }

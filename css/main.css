@@ -289,14 +289,108 @@ ul, li {
   -webkit-box-shadow: 0px 0px 29px 0px rgba(0, 0, 0, 0.75);
   box-shadow: 0px 0px 29px 0px rgba(0, 0, 0, 0.75); }
 
-.contact__text {
+.contact__block-content {
   position: absolute;
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
-  text-align: center;
+  text-align: center; }
+
+.contact__text {
   font-size: 14px;
+  font-weight: 700;
+  color: #fff; }
+
+.contact__text-data {
+  margin-bottom: 25px;
+  white-space: nowrap; }
+
+.contact__btns-link {
+  display: inline-block;
+  padding: 15px 30px;
+  font-size: 14px;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 25px; }
+  .contact__btns-link:last-child {
+    margin-bottom: 0; }
+  .contact__btns-link_one {
+    background-color: #1769ff; }
+  .contact__btns-link_two {
+    background-color: #ea4c89; }
+  .contact__btns-link_three {
+    background-color: #0f33ff; }
+
+.order__content {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  width: 730px; }
+
+.order__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center; }
+
+.order__item {
+  margin-top: 40px;
+  margin-left: 53px;
+  display: inline-block; }
+  .order__item:first-child {
+    margin-left: 0; }
+  .order__item:nth-child(4) {
+    margin-left: 0; }
+  .order__item_margin {
+    margin-left: 0; }
+
+.order__link {
+  display: inline-block;
+  width: 200px;
+  height: 50px;
+  text-align: center;
+  line-height: 2.6;
+  background: transparent;
+  border: 2px solid #fff;
+  font-size: 18px;
+  font-weight: 700;
+  color: #fff;
+  cursor: pointer; }
+
+.order__form {
+  margin-top: 70px;
+  text-align: center; }
+
+.order__input {
+  background-color: transparent;
+  border: transparent;
+  border-bottom: 2px solid #fff;
+  font-size: 30px;
+  font-weight: 300;
+  color: #fff;
+  width: 320px; }
+  .order__input_email {
+    margin-left: 65px; }
+  .order__input:focus {
+    outline: none; }
+
+.order__btn {
+  margin-top: 64px;
+  width: 400px;
+  height: 50px;
+  background-color: #0f33ff;
+  border: transparent;
+  cursor: pointer;
+  font-size: 18px;
   font-weight: 700;
   color: #fff; }

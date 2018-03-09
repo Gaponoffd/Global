@@ -118,14 +118,14 @@
                     <div class="contact__block">
                         <div class="contact__block-content">
                             <div class="contact__text">
-                                <div class="contact__text-addres">Pawia 5,31-154 Kraków, Polanrd</div>
-                                <div class="contact__text-email">ouremail@gmail.com</div>
-                                <div class="contact__text-tel">+48 12 628 75 60</div>
+                                <div class="contact__text-data">Pawia 5,31-154 Kraków, Polanrd</div>
+                                <div class="contact__text-data">ouremail@gmail.com</div>
+                                <div class="contact__text-data">+48 12 628 75 60</div>
                             </div>
                             <div class="contact__btns">
-                                <a href="" class="contact__btns contact__btns_one"></a>
-                                <a href="" class="contact__btns contact__btns_two"></a>
-                                <a href="" class="contact__btns contact__btns_three"></a>
+                                <a href="#" class="contact__btns-link contact__btns-link_one">contact us</a>
+                                <a href="#" class="contact__btns-link contact__btns-link_two">contact us</a>
+                                <a href="#" class="contact__btns-link contact__btns-link_three">contact us</a>
                             </div>
                         </div>
                     </div>
@@ -133,19 +133,26 @@
             </section>
             <section class="section order">
                 <div class="order__content">
+                    <div class="order__title">You want us to do</div>
                     <ul class="order__list">
-                        <li class="order__item"><a href="" class="order__link">App Design</a></li>
-                        <li class="order__item"><a href="" class="order__link">Graphic Design</a></li>
-                        <li class="order__item"><a href="" class="order__link">Motion Design</a></li>
-                        <li class="order__item"><a href="" class="order__link">UX Design</a></li>
-                        <li class="order__item"><a href="" class="order__link">Webdesign</a></li>
-                        <li class="order__item"><a href="" class="order__link">Marketing</a></li>
+                        <li class="order__item">
+                            <label>
+                                <input type="checkbox">
+                                <span class="order__link">App Design</span>
+                            </label>
+                        </li>
+                        <li class="order__item"><a href="#" class="order__link">Graphic Design</a></li>
+                        <li class="order__item"><a href="#" class="order__link">Motion Design</a></li>
+                        <li class="order__item"><a href="#" class="order__link">UX Design</a></li>
+                        <li class="order__item"><a href="#" class="order__link">Webdesign</a></li>
+                       
                     </ul>
+                    <div class="order__item order__item_margin"><a href="#" class="order__link">Marketing</a></div>
                     <form  action="server.php" method="post" name="order__form" class="order__form">
-                        <label for="" class="order__label">Name</label>
-                        <input type="text" id="" class="order__input">
-                        <label for="" class="order__label">Email</label>
-                        <input type="text" id="" class="order__input">
+                        <!-- <label for="" class="order__label">Name</label> -->
+                        <input type="text" id="" class="order__input" placeholder="Name">
+                        <!-- <label for="" class="order__label">Email</label> -->
+                        <input type="text" id="" class="order__input order__input_email" placeholder="Email">
                         <button type="submit" class="order__btn">Send request</button>
                     </form>
                 </div>

@@ -8,23 +8,47 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700,900&amp;subset=cyrillic" rel="stylesheet">
     <link rel="stylesheet" href="./css/normalize.css">
     <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/materialdesignicons.css">
 </head>
 <body>
     <div class="wrapper">
         <div class="container">
-            <header class="header">
-                <a href="#" class="logo__link">
-                    <img src="./img/logo.png" alt="GLOBAL-логотип" class="logo">
-                    <span class="logo__link-text">GLOBAL</span>
-                </a>
-                <a class="header__link">HIRE US</a>
-                <a href="#" class="menu__link">
-                    <div class="menu__link-block"></div>
-                    <div class="menu__link-block menu__link-block_width"></div>
-                    <div class="menu__link-block"></div>
-                </a>
-            </header>
             <section class="section home">
+                <header class="header">
+                    <a href="#" class="logo__link">
+                        <img src="./img/logo.png" alt="GLOBAL-логотип" class="logo">
+                        <span class="logo__link-text">GLOBAL</span>
+                    </a>
+                    <a class="header__link">HIRE US</a>
+                    <a href="#" class="menu__link">
+                        <div class="menu__link-block"></div>
+                        <div class="menu__link-block menu__link-block_width"></div>
+                        <div class="menu__link-block"></div>
+                    </a>
+                </header>
+                <nav class="nav">
+                    <div class="nav__line"></div>
+                    <ul class="nav__list">
+                        <li class="nav__item nav__item_activ">
+                            <a href="#" class="nav__link">01</a>
+                            <span class="nav-text">Home</span>
+                        </li>
+                        <li class="nav__item">
+                            <a href="" class="nav__link">02</a>
+                            <span class="nav-text">Works</span>
+                        </li>
+                        <li class="nav__item">
+                            <a href="" class="nav__link">03</a>
+                            <span class="nav-text">About</span>
+                        </li>
+                        <li class="nav__item">
+                            <a href="" class="nav__link">04</a>
+                            <span class="nav-text">Contact</span></li>
+                        <li class="nav__item">
+                            <a href="" class="nav__link">05</a>
+                            <span class="nav-text">Order</span></li>
+                    </ul>
+                </nav>
                 <div class="home__content">
                     <div class="home__content-wrap">
                         <div class="home__title">Your next interactive experience</div>
@@ -35,7 +59,6 @@
                         <div class="home__picture">
                             <img src="./img/home/cosmonaut.png" alt="GLOBAL-космонавт" class="home__picture-img">
                         </div>
-                        <div class="home__line"></div>
                     </div>
                     <div class="home-navigate">
                         <ul class="home-navigate__list">
@@ -59,33 +82,37 @@
                 <div class="works__content">
                     <div class="works__title">Selected work</div>
                     <ul class="works__list">
-                        <a href="#" class="works__arrow works__arrow_left"></a>
+                        <a href="#" class="works__arrow works__arrow_left">
+                            <span class="mdi mdi-arrow-left"></span>
+                        </a>
                         <li class="works__item">
                             <div class="works__item-img" style="background-image: url('./img/work/work-left.jpg')"></div>
                             <div class="works__item-title">Victory</div>
-                            <!-- <div class="works__item-content">
+                            <div class="works__item-content">
                                 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed d
-                            </div> -->
+                            </div>
                         </li>
-                        <li class="works__item works__item_active">
+                        <li class="works__item">
                             <div class="works__item-img" style="background-image: url('./img/work/work-center.jpg')"></div>
                             <div class="works__item-title">Metiew & Smith</div>
-                            <!-- <div class="works__item-content">
+                            <div class="works__item-content">
                                 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed d
-                            </div> -->
+                            </div>
                         </li>
                         <li class="works__item">
                             <div class="works__item-img" style="background-image: url('./img/work/work-right.jpg')"></div>
                             <div class="works__item-title">Alex Nowak</div>
-                            <!-- <div class="works__item-content">
+                            <div class="works__item-content">
                                 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed d
-                            </div> -->
+                            </div>
                         </li>
-                        <a href="#" class="works__arrow works__arrow_right"></a>
+                        <a href="#" class="works__arrow works__arrow_right">
+                                <span class="mdi mdi-arrow-right"></span>
+                        </a>
                     </ul>
-                    <div class="works__item-text">
+                    <!-- <div class="works__item-text">
                         Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed d
-                    </div>
+                    </div> -->
                 </div>
             </section>
             <section class="section about">
@@ -136,18 +163,60 @@
                     <div class="order__title">You want us to do</div>
                     <ul class="order__list">
                         <li class="order__item">
-                            <label>
-                                <input type="checkbox">
-                                <span class="order__link">App Design</span>
+                            <label class="order__label">
+                                <input type="checkbox" class="order__checkbox">
+                                <span class="order__link">
+                                    <span class="mdi mdi-check"></span>
+                                    App Design
+                                </span>
                             </label>
                         </li>
-                        <li class="order__item"><a href="#" class="order__link">Graphic Design</a></li>
-                        <li class="order__item"><a href="#" class="order__link">Motion Design</a></li>
-                        <li class="order__item"><a href="#" class="order__link">UX Design</a></li>
-                        <li class="order__item"><a href="#" class="order__link">Webdesign</a></li>
-                       
+                        <li class="order__item"> 
+                            <label class="order__label">
+                                <input type="checkbox" class="order__checkbox">
+                                <span class="order__link">
+                                    <span class="mdi mdi-check"></span>
+                                    Graphic Design
+                                </span>
+                            </label>
+                        </li>
+                        <li class="order__item"> 
+                            <label class="order__label">
+                                <input type="checkbox" class="order__checkbox">
+                                <span class="order__link">
+                                    <span class="mdi mdi-check"></span>
+                                    Motion Design
+                                </span>
+                            </label>
+                        </li>
+                        <li class="order__item"> 
+                            <label class="order__label">
+                                <input type="checkbox" class="order__checkbox">
+                                <span class="order__link">
+                                    <span class="mdi mdi-check"></span>
+                                    UX Design
+                                </span>
+                            </label>
+                        </li>
+                        <li class="order__item">
+                            <label class="order__label">
+                                <input type="checkbox" class="order__checkbox">
+                                <span class="order__link">
+                                    <span class="mdi mdi-check"></span>
+                                    Webdesign
+                                </span>
+                            </label>
+                        </li>
                     </ul>
-                    <div class="order__item order__item_margin"><a href="#" class="order__link">Marketing</a></div>
+                    <div class="order__item order__item_margin">
+                        <label class="order__label">
+                            <input type="checkbox" class="order__checkbox">
+                            <span class="order__link">
+                                <span class="mdi mdi-check"></span>
+                                Marketing
+                            </span>
+                        </label>
+                    </div>
                     <form  action="server.php" method="post" name="order__form" class="order__form">
                         <!-- <label for="" class="order__label">Name</label> -->
                         <input type="text" id="" class="order__input" placeholder="Name">

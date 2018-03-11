@@ -25,6 +25,22 @@
         margin-left: 0; 
     }
 }
+.order__checkbox{
+    position: absolute;
+    left: -9999px;
+}
+.order__checkbox:checked + .order__link {
+    background: #0f33ff;
+    border: 2px solid transparent;
+    .mdi-check{
+       font-size: 18px;
+       
+    }
+}
+.mdi-check{
+    color: #fff;
+    font-size: 0;
+}
 .order__link{
     display: inline-block;
     width: 200px;
@@ -37,6 +53,7 @@
     font-weight: 700;
     color: #fff;
     cursor: pointer;
+    transition: 0.4s;
 }
 .order__form{
     margin-top: 70px;

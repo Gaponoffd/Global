@@ -1,22 +1,31 @@
 .home__content{
     position: absolute;
-    top: 135px;
-    left: 100px;
+    top: 55%;
+    left: 55%;
+    transform: translate(-50%, -50%);
 }
 .home__content-wrap{
-    position: relative;    
+    position: relative;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.051);
+    width: 900px;
+    height: 400px;    
 }
 .home__title{
+    position: absolute;
     font-weight: 900;
-    font-size: 82px;
+    font-size: 77px;
     color: #fff;
-    width: 80%;
+    width: 50%;
     line-height: .95;
+    letter-spacing: -3px;
+    left: 14px;
+    top: -10px; 
 }
 .home__link{
     display: block;
-    margin-top: 55px;
-    padding-bottom: 90px;
+    position: absolute;
+    bottom: 107px;
+    left: 11px;
 }
 .home__link-ins{
     font-weight: 700;
@@ -30,13 +39,8 @@
 }
 .home__picture{
     position: absolute;
-    right: 75px;
-    bottom: -5px;
-}
-.home__line{
-    width: 92%;
-    height: 2px;
-    background-color: rgba(255, 255, 255, 0.051); 
+    right: -12px;
+    bottom: -6px;
 }
 .home-navigate{
     margin-top: 10px;
@@ -50,6 +54,9 @@
     font-size: 16px;
     line-height: 1.5;
     margin-right: 60px;
+    &:last-child{
+        margin-right: 0;
+    }
     b{
         font-size: 18px;
     }

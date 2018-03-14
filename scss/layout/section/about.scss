@@ -1,55 +1,91 @@
 .about__content{
     position: absolute;
-    top: 135px;
-    left: 80px;
+    top: rem(135px);
+    left: rem(80px);
 }
 .about__title{
     font-weight: 900; 
-    font-size: 82px;
+    font-size: rem(76px);
     color: #fff;
-    width: 48%;
+    width: 40%;
+    margin-left: rem(115px);
+    line-height: 1;
 }
 .about__link{
     display: block;
-    margin-top: 20px;
-    padding-bottom: 15px;
+    margin-top: rem(39px);
+    padding-bottom: rem(47px);
+    margin-left: rem(122px);
+    &:hover .about__link-arrow{
+        margin-left: rem(20px);
+    }
 }
 .about__link-ins{
     font-weight: 700;
-    font-size: 14px;
+    font-size: rem(14px);
     color: #fff;
 }
 .about__link-arrow{
     font-weight: 900;
-    font-size: 20px;
+    font-size: rem(23px);
     color: #fff;
+    vertical-align: middle;
+    margin-left: rem(10px);
+    transition: .5s;
 }
 .about__picture{
     position: absolute;
-    right: 75px;
-    bottom: 0;
+    right: rem(117px);
+    bottom: rem(-28px);
 }
 .about-navigate{
-
+    margin-left: rem(123px);
 }
 .about-navigate__list{
     display: flex;
 }
 .about-navigate__item{
-    width: 148px;
-    height: 70px;
+    width: rem(170px);
+    height: rem(92px);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    border: 11px solid #0f33ff;
-    margin-right: 30px;
+    border: rem(11px) solid #0f33ff;
+    margin-right: rem(30px);
     position: relative; 
+    &:hover .about-navigate__item-text{
+        bottom: rem(-25px);
+    }
 }
 .about-navigate__item-text{
     position: absolute;
-    bottom: -15px;
-    left: 10px;
+    bottom: rem(-15px);
+    left: rem(10px);
     color: #fff;
-    font-size: 14px;
+    font-size: rem(14px);
     font-weight: 700;
+    letter-spacing: rem(-1px);
+    transition: 0.5s;
+}
+.svg-rect{
+    position: absolute;
+    bottom: rem(295px);
+    left: rem(483px);
+}
+.svg-circle{
+    position: absolute;
+    top: rem(202px);
+    left: rem(514px);
+}
+.svg-polygon{
+    position: absolute;
+    top: rem(113px);
+    left: rem(415px);
+}
+.svg-rhomb{
+    position: absolute;
+    top: rem(187px);
+    left: rem(652px);
+    transform: rotate(45deg);
+    transform-origin: center;
 }

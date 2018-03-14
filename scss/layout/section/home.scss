@@ -1,63 +1,88 @@
 .home__content{
     position: absolute;
     top: 55%;
-    left: 55%;
+    left: 67%;
     transform: translate(-50%, -50%);
+    width: 100%;
 }
 .home__content-wrap{
     position: relative;
-    border-bottom: 2px solid rgba(255, 255, 255, 0.051);
-    width: 900px;
-    height: 400px;    
+    border-bottom: rem(2px) solid rgba(255, 255, 255, 0.051);
+    width: rem(900px);
+    height: rem(400px);    
 }
 .home__title{
     position: absolute;
     font-weight: 900;
-    font-size: 77px;
+    font-size: rem(77px);
     color: #fff;
     width: 50%;
     line-height: .95;
-    letter-spacing: -3px;
-    left: 14px;
-    top: -10px; 
+    letter-spacing: rem(-3px);
+    left: rem(14px);
+    top: rem(-10px); 
 }
 .home__link{
     display: block;
     position: absolute;
-    bottom: 107px;
-    left: 11px;
+    bottom: rem(107px);
+    left: rem(11px);
+    width: rem(90px);
+    background-color: #0f33ff;
+    height: rem(36px);
+    &:hover .home__link-block{
+        left: rem(-29px);
+    }
+}
+.home__link-block{
+    display: inline-block;
+    width: rem(30px);
+    background-color: #0f33ff;
+    height: rem(36px);
+    position: absolute;
+    left: 0;
+    top: rem(0px);
+    transition: 0.5s;
+}
+.home__link-text-wrap{
+    position: absolute;
+    top: 50%;
+    left: rem(-22px);
+    transform: translateY(-50%);
 }
 .home__link-ins{
+   // margin-left: rem(-22px);
     font-weight: 700;
-    font-size: 14px;
+    font-size: rem(14px);
     color: #fff;
 }
 .home__link-arrow{
     font-weight: 900;
-    font-size: 20px;
+    font-size: rem(20px);
     color: #fff;
+    vertical-align: middle;
 }
 .home__picture{
     position: absolute;
-    right: -12px;
-    bottom: -6px;
+    right: rem(-12px);
+    bottom: rem(-6px);
 }
 .home-navigate{
-    margin-top: 10px;
+    margin-top: rem(10px);
 }
 .home-navigate__list{
     display: flex;
 }
 .home-navigate__item{
-    width: 268px;
+    width: rem(268px);
     color: rgba(255, 255, 255, 0.1);
-    font-size: 16px;
+    font-size: rem(16px);
     line-height: 1.5;
-    margin-right: 60px;
+    margin-right: rem(60px);
     &:last-child{
         margin-right: 0;
     }
     b{
-        font-size: 18px;
+        font-size: rem(18px);
     }
 }

@@ -4,7 +4,15 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 730px;
+    width: rem(730px);
+}
+.order__title{
+    font-size: rem(30px);
+    color: rgb(255, 255, 255);
+    line-height: 2.4;
+}
+.order__form{
+    text-align: center;
 }
 .order__list{
     display: flex;
@@ -12,8 +20,8 @@
     justify-content: center;
 }
 .order__item{
-    margin-top: 40px;
-    margin-left: 53px;
+    margin-top: rem(40px);
+    margin-left: rem(53px);
     display: inline-block;
     &:first-child{
         margin-left: 0; 
@@ -27,14 +35,13 @@
 }
 .order__checkbox{
     position: absolute;
-    left: -9999px;
+    left: rem(-9999px);
 }
 .order__checkbox:checked + .order__link {
     background: #0f33ff;
-    border: 2px solid transparent;
+    border: rem(2px) solid transparent;
     .mdi-check{
-       font-size: 18px;
-       
+       font-size: rem(18px); 
     }
 }
 .mdi-check{
@@ -43,45 +50,44 @@
 }
 .order__link{
     display: inline-block;
-    width: 200px;
-    height: 50px;
+    width: rem(200px);
+    height: rem(50px);
     text-align: center;
     line-height: 2.6;
     background: transparent;
-    border: 2px solid #fff;
-    font-size: 18px;
+    border: rem(2px) solid #fff;
+    font-size: rem(18px);
     font-weight: 700;
     color: #fff;
     cursor: pointer;
     transition: 0.4s;
 }
-.order__form{
-    margin-top: 70px;
-    text-align: center;
+.order__input-wrap{
+    margin-top: rem(42px);
 }
 .order__input{
     background-color: transparent;
     border: transparent;
-    border-bottom: 2px solid #fff;
-    font-size: 30px;
+    border-bottom: rem(2px) solid #fff;
+    font-size: rem(30px);
     font-weight: 300;
     color: #fff;
-    width: 320px;
+    width: rem(320px);
     &_email{
-        margin-left: 65px;
+        margin-left: rem(65px);
     }
     &:focus{
         outline: none;
     }
 }
 .order__btn{
-    margin-top: 64px;
-    width: 400px;
-    height: 50px;
+    margin-top: rem(64px);
+    width: rem(400px);
+    height: rem(50px);
     background-color: #0f33ff;
     border: transparent;
     cursor: pointer;
-    font-size: 18px;
+    font-size: rem(18px);
     font-weight: 700;
     color: #fff;
 }

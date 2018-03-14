@@ -6,40 +6,42 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 0;
+    padding: rem(20px) 0;
     z-index: 100;
 }
 
 .logo{
-    width: 30px;
-    height: 28px;
+    width: rem(30px);
+    height: rem(28px);
     vertical-align: middle;
 }
 .logo__link-text{
     vertical-align: middle;
     font-weight: 700;
-    font-size: 16px;
+    font-size: rem(16px);
     color: #fff;
-    margin-left: 10px;
+    margin-left: rem(10px);
 }
 .header__link{
-    display: block;
-    padding: 10px 15px;
+    display: inline-block;
+    padding: rem(8px) rem(16px);
     background-color: #0f33ff;
     font-weight: 700;
-    font-size: 14px;
+    font-size: rem(14px);
     color: #fff;
+    margin-right: rem(90px);
+    cursor: pointer;
 }
 .menu__link{
     display: block;
 }
 .menu__link-block{
-    width: 19px;
-    height: 2px;
+    width: rem(19px);
+    height: rem(2px);
     background-color: #fff;
-    margin-bottom: 4px;
+    margin-bottom: rem(4px);
 }
 .menu__link-block_width{
-    width: 13px;
-    margin-left: 3px
+    width: rem(13px);
+    margin-left: rem(3px)
 }

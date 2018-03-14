@@ -6,7 +6,8 @@
 }
 .container{
     // position: relative;
-    width: 1170px;
+    //width: 1170px;
+    width: 90%;
     margin: 0 auto;
 }
 .section{
@@ -15,4 +16,35 @@
     height: 100%;
     min-height: 720px;
     border-bottom: 1px dashed #fff;
+}
+
+$tablets: 768px;
+$phones: 480px;
+
+@function rem($px){
+    @return $px/16px+0rem;
+}
+
+@mixin tablets {
+    @media screen and(max-width: $tablets){
+        @content;
+    }
+}
+
+@mixin phones {
+    @media screen and(max-width: $phones){
+        @content;
+    }
+}
+
+html {
+    @include tablets {
+        font-size: 15px;
+    }
+}
+
+html {
+    @include phones {
+        font-size: 14px;
+    }
 }

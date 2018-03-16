@@ -1,21 +1,52 @@
 .about__content{
-    position: absolute;
-    top: rem(135px);
-    left: rem(80px);
+    //position: absolute;
+    // top: rem(135px);
+    // left: rem(80px);
+    width: 78%;
+    height: 90%;
+    margin: 0 auto;
+    position: relative;
+    top: 138px;
 }
 .about__title{
+    position: relative;
+    width: 47.5%;
+    margin-left: rem(77px);
+}
+.about__title-text{
     font-weight: 900; 
     font-size: rem(76px);
     color: #fff;
-    width: 40%;
-    margin-left: rem(115px);
     line-height: 1;
+}
+.svg-rect{
+    position: absolute;
+    bottom: 5%;
+    left: 67%;
+}
+.svg-circle{
+    position: absolute;
+    top: 22%;
+    left: 73%;
+}
+.svg-polygon{
+    position: absolute;
+    top: 0;
+    left: 53%;
+}
+.svg-rhomb{
+    position: absolute;
+    top: 17%;
+    left: 106%;
+    transform: rotate(45deg);
+    transform-origin: center;
 }
 .about__link{
     display: block;
-    margin-top: rem(39px);
-    padding-bottom: rem(47px);
-    margin-left: rem(122px);
+    margin-top: rem(32px);
+    margin-bottom: rem(47px);
+    margin-left: rem(77px);
+    //margin-left: rem(122px);
     &:hover .about__link-arrow{
         margin-left: rem(20px);
     }
@@ -35,11 +66,11 @@
 }
 .about__picture{
     position: absolute;
-    right: rem(117px);
-    bottom: rem(-28px);
+    right: rem(-10px);
+    bottom: rem(-25px);
 }
 .about-navigate{
-    margin-left: rem(123px);
+    margin-left: rem(77px);
 }
 .about-navigate__list{
     display: flex;
@@ -67,25 +98,4 @@
     letter-spacing: rem(-1px);
     transition: 0.5s;
 }
-.svg-rect{
-    position: absolute;
-    bottom: rem(295px);
-    left: rem(483px);
-}
-.svg-circle{
-    position: absolute;
-    top: rem(202px);
-    left: rem(514px);
-}
-.svg-polygon{
-    position: absolute;
-    top: rem(113px);
-    left: rem(415px);
-}
-.svg-rhomb{
-    position: absolute;
-    top: rem(187px);
-    left: rem(652px);
-    transform: rotate(45deg);
-    transform-origin: center;
-}
+

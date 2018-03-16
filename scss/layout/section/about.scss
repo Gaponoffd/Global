@@ -1,17 +1,21 @@
 .about__content{
-    //position: absolute;
-    // top: rem(135px);
-    // left: rem(80px);
     width: 78%;
     height: 90%;
     margin: 0 auto;
     position: relative;
     top: 138px;
+    @include tablets{
+        top: 200px;
+        margin: 0 0;
+    }
 }
 .about__title{
     position: relative;
-    width: 47.5%;
+    width: rem(435px);
     margin-left: rem(77px);
+    @include tablets{
+        margin-left: 0;
+    }
 }
 .about__title-text{
     font-weight: 900; 
@@ -46,9 +50,11 @@
     margin-top: rem(32px);
     margin-bottom: rem(47px);
     margin-left: rem(77px);
-    //margin-left: rem(122px);
     &:hover .about__link-arrow{
         margin-left: rem(20px);
+    }
+    @include tablets{
+        margin-left: 0;
     }
 }
 .about__link-ins{
@@ -68,9 +74,15 @@
     position: absolute;
     right: rem(-10px);
     bottom: rem(-25px);
+    @include laptop{
+        display: none;
+    }
 }
 .about-navigate{
     margin-left: rem(77px);
+    @include tablets{
+       display: none;
+    }
 }
 .about-navigate__list{
     display: flex;

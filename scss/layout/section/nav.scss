@@ -1,10 +1,13 @@
 .nav{
-    position: absolute;
+    position: fixed;
     z-index: 100;
     top:50%;
     transform: translateY(-50%);
     display: flex;
     align-items: center;
+    @include tablets{
+       display: none;
+    }
 }
 .nav__line{
     width: rem(2px);

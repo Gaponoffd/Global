@@ -15,23 +15,36 @@
     text-align: center;
 }
 .order__list{
+    @include tablets{
+        display: flex;
+        justify-content: space-around;
+        width: 80%;
+        margin: 0 auto;
+     }
+}
+.order__list-top{
+    display: flex;
+    //flex-wrap: wrap;
+    justify-content: space-around;
+    @include tablets{
+        flex-direction: column;
+    }
+    
+}
+.order__list-bottom{
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-around;
+    width: 65%;
+    margin: 0 auto;
+    @include tablets{
+        flex-direction: column;
+        margin: 0 0;
+        width: 35%;
+    }
 }
 .order__item{
     margin-top: rem(40px);
-    margin-left: rem(53px);
-    display: inline-block;
-    &:first-child{
-        margin-left: 0; 
-    }
-    &:nth-child(4){
-        margin-left: 0; 
-    }
-    &_margin{
-        margin-left: 0; 
-    }
 }
 .order__checkbox{
     position: absolute;
@@ -73,6 +86,9 @@
     font-weight: 300;
     color: #fff;
     width: rem(320px);
+    @include tablets{
+        width: rem(190px);
+    }
     &_email{
         margin-left: rem(65px);
     }

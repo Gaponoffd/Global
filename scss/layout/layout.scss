@@ -5,7 +5,6 @@
     background-color: #0c0c0c
 }
 .container{
-    // position: relative;
     //width: 1170px;
     width: 87%;
     margin: 0 auto;
@@ -18,13 +17,18 @@
     border-bottom: 1px dashed #fff;
 }
 
+$laptop: 992px;
 $tablets: 768px;
 $phones: 480px;
 
 @function rem($px){
     @return $px/16px+0rem;
 }
-
+@mixin laptop {
+    @media screen and(max-width: $laptop){
+        @content;
+    }
+}
 @mixin tablets {
     @media screen and(max-width: $tablets){
         @content;
@@ -45,6 +49,6 @@ html {
 
 html {
     @include phones {
-        font-size: 14px;
+        font-size: 13px;
     }
 }

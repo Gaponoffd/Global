@@ -554,7 +554,8 @@ body, html {
   font-weight: 700;
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
-  transition: 0.5s; }
+  transition: 0.5s;
+  letter-spacing: -0.9px; }
 
 .map {
   width: 100%;

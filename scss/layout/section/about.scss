@@ -3,7 +3,7 @@
     height: 90%;
     margin: 0 auto;
     position: relative;
-    top: 138px;
+    top: rem(80px);
     @include tablets{
         top: 200px;
         margin: 0 0;
@@ -30,7 +30,7 @@
 }
 .svg-circle{
     position: absolute;
-    top: 22%;
+    top: 46%;
     left: 73%;
 }
 .svg-polygon{
@@ -107,7 +107,6 @@
     color: #fff;
     font-size: rem(14px);
     font-weight: 700;
-    letter-spacing: rem(-1px);
     transition: 0.5s;
 }
 

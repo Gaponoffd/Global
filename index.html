@@ -9,52 +9,49 @@
     <link rel="stylesheet" href="./css/normalize.css">
     <link rel="stylesheet" href="./css/main.css">
     <link rel="stylesheet" href="./css/materialdesignicons.css">
+    <link rel="stylesheet" href="./css/jquery.fullPage.css">
 </head>
 <body>
     <div class="wrapper">
-        <div class="container">
-            <section class="section home">
+        <div class="container" id="fullpage">
+            <section class="section home active" data-anchor="home" id="home1">
                 <header class="header">
-                    <a href="#" class="logo__link">
+                    <a href="#home" class="logo__link">
                         <img src="./img/logo.png" alt="GLOBAL-логотип" class="logo">
                         <span class="logo__link-text">GLOBAL</span>
                     </a>
-                    <a href="#" class="menu__link">
-                        <div class="menu__link-block"></div>
-                        <div class="menu__link-block menu__link-block_width"></div>
-                        <div class="menu__link-block"></div>
-                    </a>
+                    <a href="#" class="menu__link">8-800-900-00-00</a>
                 </header>
-                <nav class="nav">
+                <nav class="nav"  id="myMenu">
                     <div class="nav__line"></div>
                     <ul class="nav__list">
-                        <li class="nav__item nav__item_activ">
-                            <a href="#" class="nav__link">01</a>
-                            <span class="nav-text">Home</span>
+                        <li class="nav__item active"  data-menuanchor="home">
+                            <a href="#home" class="nav__link">01</a>
+                            <span class="nav-text">Главная</span>
                         </li>
-                        <li class="nav__item">
-                            <a href="" class="nav__link">02</a>
-                            <span class="nav-text">Works</span>
+                        <li class="nav__item" data-menuanchor="works">
+                            <a href="#works" class="nav__link">02</a>
+                            <span class="nav-text">Кейсы</span>
                         </li>
-                        <li class="nav__item">
-                            <a href="" class="nav__link">03</a>
-                            <span class="nav-text">About</span>
+                        <li class="nav__item" data-menuanchor="about">
+                            <a href="#about" class="nav__link">03</a>
+                            <span class="nav-text">Команда</span>
                         </li>
-                        <li class="nav__item">
-                            <a href="" class="nav__link">04</a>
-                            <span class="nav-text">Contact</span></li>
-                        <li class="nav__item">
-                            <a href="" class="nav__link">05</a>
-                            <span class="nav-text">Order</span></li>
+                        <li class="nav__item" data-menuanchor="contact">
+                            <a href="#contact" class="nav__link">04</a>
+                            <span class="nav-text">Контакты</span></li>
+                        <li class="nav__item" data-menuanchor="order">
+                            <a href="#order" class="nav__link">05</a>
+                            <span class="nav-text">Услуги</span></li>
                     </ul>
                 </nav>
                 <div class="home__content">
                     <div class="home__content-wrap">
-                        <div class="home__title">Your next interactive experience</div>
-                        <a href="#" class="home__link">
+                        <div class="home__title">Дизайн на грани реальности</div>
+                        <a href="#order" class="home__link">
                             <div class="home__link-block"></div>
                             <div class="home__link-text-wrap">
-                                <span class="home__link-ins">HIRE US</span>
+                                <span class="home__link-ins">Подробнее</span>
                                 <span class="home__link-arrow mdi mdi-arrow-right"></span>
                             </div>
                         </a>
@@ -65,44 +62,40 @@
                     <div class="home-navigate">
                         <ul class="home-navigate__list">
                             <li class="home-navigate__item">
-                                <b>Metiew & Smith</b>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed d</p>
+                                <b>Опыт работы 10 лет</b>
+                                <p>Благодаря опыту решаем любые задачи</p>
                             </li>
                             <li class="home-navigate__item">
-                                <b>Fantasy interactive</b>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed d</p>
+                                <b>Работа в срок</b>
+                                <p>Если не укладываемя в срок - возвращаем деньги</p>
                             </li>
                             <li class="home-navigate__item">
-                                <b>Paul & shark</b>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed d</p>
+                                <b>Персональный менеджер</b>
+                                <p>Оперативно отвечаем на вопросы в течение дня</p>
                             </li>
                         </ul>
                     </div>        
                 </div>
             </section>
-            <section class="section works">
+            <section class="section works" data-anchor="works" id="works1">
                 <header class="header">
-                    <a href="#" class="logo__link">
+                    <a href="#home" class="logo__link">
                         <img src="./img/logo.png" alt="GLOBAL-логотип" class="logo">
                         <span class="logo__link-text">GLOBAL</span>
                     </a>
-                    <a class="header__link">HIRE US</a>
-                    <a href="#" class="menu__link">
-                        <div class="menu__link-block"></div>
-                        <div class="menu__link-block menu__link-block_width"></div>
-                        <div class="menu__link-block"></div>
-                    </a>
+                    <a href="#order" class="header__link">Оставить заявку</a>
+                    <a href="#" class="menu__link">8-800-900-00-00</a>
                 </header>
                 <div class="works__content">
-                    <div class="works__title">Selected work</div>
+                    <div class="works__title">Последние работы</div>
                     <div class="works__slider">
                         <ul class="works__list">
                             <li class="works__item works__item_left">
                                 <div class="works__item-img" style="background-image: url('./img/work/work-left.jpg')"></div>
                                 <div class="works__item-content">
-                                    <div class="works__item-title">Victory</div>
+                                    <div class="works__item-title">Юбилейный буклет</div>
                                     <div class="works__item-text">
-                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed d
+                                        Разработка полиграфии к юбилейному выходу журнала
                                     </div>
                                 </div>
                                 
@@ -110,18 +103,18 @@
                             <li class="works__item works__item_active">
                                 <div class="works__item-img" style="background-image: url('./img/work/work-center.jpg')"></div>
                                 <div class="works__item-content">
-                                    <div class="works__item-title">Metiew & Smith</div>
+                                    <div class="works__item-title">Жить со вкусом</div>
                                     <div class="works__item-text">
-                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed d
+                                        Разработка рекламной компании для сети магазина косметики
                                     </div>
                                 </div>
                             </li>
                             <li class="works__item works__item_right">
                                 <div class="works__item-img" style="background-image: url('./img/work/work-right.jpg')"></div>
                                 <div class="works__item-content">
-                                    <div class="works__item-title">Alex Nowak</div>
+                                    <div class="works__item-title">Брендинг</div>
                                     <div class="works__item-text">
-                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed d
+                                        Оформление официальной документации для компании по производству канцелярии
                                     </div>
                                 </div>
                             </li>
@@ -135,22 +128,18 @@
                     </div>
                 </div>
             </section>
-            <section class="section about">
+            <section class="section about" data-anchor="about" id="about1">
                 <header class="header">
-                    <a href="#" class="logo__link">
+                    <a href="#home" class="logo__link">
                         <img src="./img/logo.png" alt="GLOBAL-логотип" class="logo">
                         <span class="logo__link-text">GLOBAL</span>
                     </a>
-                    <a class="header__link">HIRE US</a>
-                    <a href="#" class="menu__link">
-                        <div class="menu__link-block"></div>
-                        <div class="menu__link-block menu__link-block_width"></div>
-                        <div class="menu__link-block"></div>
-                    </a>
+                    <a href="#order" class="header__link">Оставить заявку</a>
+                    <a href="#" class="menu__link">8-800-900-00-00</a>
                 </header>
                 <div class="about__content">
                     <div class="about__title">
-                        <div class="about__title-text">We believe in passionate people</div> 
+                        <div class="about__title-text">Страстно любим работу</div> 
                         <svg width="10" height="10" viewBox="0 0 10px 10px" class="svg-rect">
                                 <rect rx="0" ry="0" x="0" y="0" width="10" height="10" style="fill: #0f33ff;" />
                             </svg>
@@ -165,8 +154,8 @@
                         </svg>
                     </div>
                        
-                    <a href="#" class="about__link">        
-                        <span class="about__link-ins">CAREER</span>
+                    <a href="#order" class="about__link">        
+                        <span class="about__link-ins">Позвонить</span>
                         <span class="about__link-arrow mdi mdi-arrow-right"></span>
                     </a>
                     <div class="about__picture">
@@ -175,62 +164,54 @@
                     <div class="about-navigate">
                         <ul class="about-navigate__list">
                             <li class="about-navigate__item" style="background-image: url('./img/about/about-winners.jpg');">
-                                <div class="about-navigate__item-text">WINNERS</div>
+                                <div class="about-navigate__item-text">9 СПЕЦИАЛИСТОВ</div>
                             </li>
                             <li class="about-navigate__item" style="background-image: url('./img/about/about-philosophy.jpg');">
-                                <div class="about-navigate__item-text">PHILOSOPHY</div>
+                                <div class="about-navigate__item-text">125 РАБОТ</div>
                             </li>
                             <li class="about-navigate__item" style="background-image: url('./img/about/about-history.jpg');">
-                                <div class="about-navigate__item-text">HISTORY</div>
+                                <div class="about-navigate__item-text">РАБОТАЕМ 24/7</div>
                             </li>
                         </ul>
                     </div>
                 </div>
             </section>
-            <section class="section contact">
+            <section class="section contact" data-anchor="contact" id="contact1">
                 <header class="header">
-                    <a href="#" class="logo__link">
+                    <a href="#home" class="logo__link">
                         <img src="./img/logo.png" alt="GLOBAL-логотип" class="logo">
                         <span class="logo__link-text">GLOBAL</span>
                     </a>
-                    <a class="header__link">HIRE US</a>
-                    <a href="#" class="menu__link">
-                        <div class="menu__link-block"></div>
-                        <div class="menu__link-block menu__link-block_width"></div>
-                        <div class="menu__link-block"></div>
-                    </a>
+                    <a href="#order" class="header__link">Оставить заявку</a>
+                    <a href="#" class="menu__link">8-800-900-00-00</a>
                 </header>
                 <div class="map" style=" background-image: url('./img/maps.png');">
                     <div class="contact__block">
                         <div class="contact__block-content">
                             <div class="contact__text">
-                                <div class="contact__text-data">Pawia 5,31-154 Kraków, Polanrd</div>
-                                <div class="contact__text-data">ouremail@gmail.com</div>
-                                <div class="contact__text-data">+48 12 628 75 60</div>
+                                <div class="contact__text-data">г.Новороссиск, Б. Пупко, д.3</div>
+                                <div class="contact__text-data">Gaponoffd@gmail.com</div>
+                                <div class="contact__text-data">8-800-900-00-00</div>
                             </div>
                             <div class="contact__btns">
-                                <a href="#" class="contact__btns-link contact__btns-link_one">contact us</a>
-                                <a href="#" class="contact__btns-link contact__btns-link_two">contact us</a>
-                                <a href="#" class="contact__btns-link contact__btns-link_three">contact us</a>
+                                <a href="#" class="contact__btns-link contact__btns-link_one">Написать в VK</a>
+                                <a href="#" class="contact__btns-link contact__btns-link_two">Написать в INS</a>
+                                <a href="#" class="contact__btns-link contact__btns-link_three">Написать в FB</a>
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
-            <section class="section order" >
+            <section class="section order" data-anchor="order" id="order1">
                 <header class="header">
-                    <a href="#" class="logo__link">
+                    <a href="#home" class="logo__link">
                         <img src="./img/logo.png" alt="GLOBAL-логотип" class="logo">
                         <span class="logo__link-text">GLOBAL</span>
                     </a>
-                    <a href="#" class="menu__link">
-                        <div class="menu__link-block"></div>
-                        <div class="menu__link-block menu__link-block_width"></div>
-                        <div class="menu__link-block"></div>
-                    </a>
+                    <a href="#" class="menu__link">8-800-900-00-00</a>
                 </header>
                 <div class="order__content">
-                    <div class="order__title">You want us to do</div>
+                    <div class="order__title">Выберете интересующую услугу:</div>
                     <form  action="server.php" method="post" name="order__form" class="order__form">
                         <ul class="order__list">
                             <div class="order__list-top">
@@ -239,7 +220,7 @@
                                         <input type="checkbox" class="order__checkbox">
                                         <span class="order__link">
                                             <span class="mdi mdi-check"></span>
-                                            App Design
+                                            Брендинг
                                         </span>
                                     </label>
                                 </li>
@@ -248,7 +229,7 @@
                                         <input type="checkbox" class="order__checkbox">
                                         <span class="order__link">
                                             <span class="mdi mdi-check"></span>
-                                            Graphic Design
+                                            Полиграфию
                                         </span>
                                     </label>
                                 </li>
@@ -257,7 +238,7 @@
                                         <input type="checkbox" class="order__checkbox">
                                         <span class="order__link">
                                             <span class="mdi mdi-check"></span>
-                                            Motion Design
+                                            Анимацию
                                         </span>
                                     </label>
                                 </li>
@@ -268,7 +249,7 @@
                                         <input type="checkbox" class="order__checkbox">
                                         <span class="order__link">
                                             <span class="mdi mdi-check"></span>
-                                            UX Design
+                                            Иллюстрацию
                                         </span>
                                     </label>
                                 </li>
@@ -277,7 +258,7 @@
                                         <input type="checkbox" class="order__checkbox">
                                         <span class="order__link">
                                             <span class="mdi mdi-check"></span>
-                                            Webdesign
+                                            Веб-дизайн
                                         </span>
                                     </label>
                                 </li>
@@ -286,7 +267,7 @@
                                         <input type="checkbox" class="order__checkbox">
                                         <span class="order__link">
                                             <span class="mdi mdi-check"></span>
-                                            Marketing
+                                            Маркетинг
                                         </span>
                                     </label>
                                 </li>
@@ -294,10 +275,10 @@
                         </ul>
                         
                         <div class="order__input-wrap">
-                            <input type="text" id="" class="order__input" placeholder="Name">
-                            <input type="text" id="" class="order__input order__input_email" placeholder="Email">
+                            <input type="text" id="" class="order__input" placeholder="Ваше имя">
+                            <input type="text" id="" class="order__input order__input_email" placeholder="Ваш Email">
                         </div>
-                        <button type="submit" class="order__btn">Send request</button>
+                        <button type="submit" class="order__btn">Отправить заявку</button>
                     </form>
                 </div>
             </section>
@@ -305,6 +286,7 @@
     </div>
 
     <script src="./js/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="./js/jquery.fullPage.js"></script>
     <script src="./js/main.js"></script>
 </body>
 </html>

@@ -1,5 +1,13 @@
 
 $(document).ready(function() {
+
+    //jquery.fullPage
+    $('#fullpage').fullpage({
+        menu: '#myMenu'
+    });
+
+    //Cлайдер
+     
     $('.works__arrow_right').on('click', function(e) {
         e.preventDefault(); 
         var $this = $(this);
@@ -32,7 +40,6 @@ $(document).ready(function() {
         },400)
         $(worksList).animate({ opacity : 1 }, 400); 
     })
-
    
     $('.works__arrow_left').on('click', function(e) {
         e.preventDefault(); 
@@ -66,4 +73,5 @@ $(document).ready(function() {
         },400) 
         $(worksList).animate({ opacity : 1 }, 400); 
     })
+
 })

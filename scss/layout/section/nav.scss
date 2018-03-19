@@ -2,6 +2,7 @@
     position: fixed;
     z-index: 100;
     top:50%;
+    left: 6%;
     transform: translateY(-50%);
     display: flex;
     align-items: center;
@@ -35,7 +36,7 @@
         margin-right: rem(10px);
     }
 }
-.nav__item_activ{
+.active{
     &::before{
         background-color: #0e2088;
     }

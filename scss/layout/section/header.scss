@@ -29,20 +29,11 @@
     font-weight: 700;
     font-size: rem(14px);
     color: #fff;
-    margin-right: rem(90px);
+    margin-left: 50px;
     cursor: pointer;
 }
 .menu__link{
     display: block;
-}
-.menu__link-block{
-    width: rem(19px);
-    height: rem(2px);
-    background-color: #fff;
-    margin-bottom: rem(4px);
-}
-.menu__link-block_width{
-    width: rem(13px);
-    margin-left: rem(3px)
-    
+    color: #fff;
+    font-weight: 700;
 }
